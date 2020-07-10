@@ -1,11 +1,25 @@
-﻿// JM_test_for_code.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿#include <iostream>
+#include<vector>
+#include<list>
+#include<random>
+#include<ctime>
+using namespace std;
 
-#include <iostream>
+double randomofjm()
+{
+	double r;
+	static defalut_random_engine e(time(0));
+	static default_random_engine e;
+	static uniform_real_distribution<double> u(0, 1);
+	r = u(e);
+	return  r;
+	
 
+}
 int main()
 {
-    std::cout << "Hello World!\n";
+	bad_randVec();
+	std::cout << "Hello World!\n";
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
