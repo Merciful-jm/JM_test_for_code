@@ -5,19 +5,22 @@
 #include<ctime>
 using namespace std;
 
-double randomofjm()
-{
-	double r;
-	static defalut_random_engine e(time(0));
-	static default_random_engine e;
-	static uniform_real_distribution<double> u(0, 1);
-	r = u(e);
-	return  r;	
-}
+
 int main()
 {
-	bad_randVec();
-	std::cout << "Hello World!\n";
+	const int L = 32;
+	int Spins[L][L];
+	for (int i = 0; i < L; i++)
+	{
+		for (int j = 0; j < L; j++)
+		{
+			Spins[i][j] = 1;
+			h= Spins
+			cout << "Spins" << i <<"\t"<< j << "AS" << Spins[i][j]<<"\n";
+		}
+	}
+
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
